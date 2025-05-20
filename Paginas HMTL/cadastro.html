@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - GSB</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #249356;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 8px;
+            width: 250px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: #249356;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d7550;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <form method="POST" action="api/cadastro">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="confirmar">Confirmar Senha:</label>
+        <input type="password" id="confirmar" name="confirmar" required>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSB - General Sporting Bet</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #249356;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 8px;
+            width: 250px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: #249356;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d7550;
+        }
+
+        .form-footer {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember label {
+            margin-left: 5px;
+        }
+
+        .register-btn {
+            background-color: #ffffff;
+            color: #249356;
+            border: 2px solid #249356;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .register-btn:hover {
+            background-color: #249356;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Login</h1>
+    </main>
+    
+    <form method="POST" action="home.html"> 
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" name="pw" required>
+
+        <input type="submit" value="Login">
+
+        <div class="form-footer">
+            <div class="remember">
+                <input type="checkbox" id="ck" name="ck">
+                <label for="ck">Remember me</label>
+            </div>
+            <a href="cadastro.html" class="register-btn">Cadastrar-se</a>
+        </div>
+    </form>
+</body>
+</html>

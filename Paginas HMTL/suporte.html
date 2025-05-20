@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte - GSB</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #249356;
+      color: white;
+    }
+
+    header {
+      background-color: #1d7550;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #20805d;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      color: #000;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    label, textarea, input {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    input[type="submit"] {
+      background-color: #249356;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1d7550;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Suporte ao Usuário</h1>
+  </header>
+
+  <nav>
+    <a href="inicio.html">Início</a>
+    <a href="apostas.html">Apostas</a>
+    <a href="minha-conta.html">Minha Conta</a>
+    <a href="suporte.html">Suporte</a>
+  </nav>
+
+  <main>
+    <h2>Fale Conosco</h2>
+    <form>
+      <label for="nome">Seu nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+</body>
+</html>

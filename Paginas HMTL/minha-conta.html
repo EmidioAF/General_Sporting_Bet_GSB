@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Conta - GSB</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #249356;
+      color: white;
+    }
+
+    header {
+      background-color: #1d7550;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #20805d;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      color: #000;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    label, input {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #249356;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1d7550;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha Conta</h1>
+  </header>
+
+  <nav>
+    <a href="inicio.html">Início</a>
+    <a href="apostas.html">Apostas</a>
+    <a href="minha-conta.html">Minha Conta</a>
+    <a href="suporte.html">Suporte</a>
+  </nav>
+
+  <main>
+    <h2>Configurações da Conta</h2>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="usuario@exemplo.com">
+
+      <label for="senha">Nova Senha:</label>
+      <input type="password" id="senha" name="senha">
+
+      <input type="submit" value="Salvar Alterações">
+    </form>
+  </main>
+</body>
+</html>
