@@ -1,0 +1,335 @@
+/* Index e Cadastro */
+body {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    font-family: Arial, sans-serif;
+    background-color: #249356;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #249356;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d7550;
+}
+
+.form-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember label {
+    margin-left: 5px;
+}
+
+.register-btn {
+    background-color: #ffffff;
+    color: #249356;
+    border: 2px solid #249356;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #249356;
+    color: white;
+}
+
+/* Homes */
+
+:root {
+    --verde: #249356;
+    --branco: #ffffff;
+    --cinza-claro: #f2f2f2;
+    --cinza-escuro: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+}
+
+/* Header */
+header {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--branco);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    background-color: var(--branco);
+    color: var(--verde);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-content h2 {
+    color: var(--cinza-escuro);
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Inicio */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #249356;
+  color: white;
+}
+
+header {
+  background-color: #1d7550;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #20805d;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+/* Apostas */
+
+/* Já existentes:
+   body, header, nav, nav a, nav a:hover
+   vindos de inicio.html
+*/
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+.apostas-lista {
+  margin-top: 20px;
+}
+
+/* Minha-Conta */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+label,
+input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #249356;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d7550;
+}
+
+/* Suporte */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+label,
+textarea,
+input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+textarea {
+  height: 80px;
+}
+
+input[type="submit"] {
+  background-color: #249356;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d7550;
+}
